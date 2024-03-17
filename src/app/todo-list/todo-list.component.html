@@ -1,0 +1,14 @@
+<p>todo-list works!</p>
+<form>
+  <input type="text" name="name" [(ngModel)]="name" />
+  <button (click)="submitForm()">Submit</button>
+</form>
+<h1>Edit item</h1>
+<form action="">
+  <input type="text" name="name_edit" [(ngModel)]="name_edit" />
+  <button (click)="submitFormEdit()">Submit</button>
+</form>
+<app-todo-items
+  [items]="items"
+  (editItem)="onEditItem($event)"
+></app-todo-items>

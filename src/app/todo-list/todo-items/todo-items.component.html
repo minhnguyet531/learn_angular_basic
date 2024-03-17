@@ -1,0 +1,8 @@
+<p>todo-items works!</p>
+<ul>
+  <li *ngFor="let item of items">
+    <span>{{ item["id"] }}: {{ item["name"] }} </span>
+    <button (click)="edit(item)">Edit</button>
+    <button (click)="delete(item)">Delete</button>
+  </li>
+</ul>
